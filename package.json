@@ -20,7 +20,8 @@
   "scripts": {
     "build": "babel lib -x .mjs --out-dir lib",
     "clean": "rimraf lib/**/*.js",
-    "test": "mocha --require intelli-espower-loader"
+    "test": "mocha --require intelli-espower-loader",
+    "prepare": "npm run build"
   },
   "dependencies": {
     "@types/tough-cookie": "^2.3.1",
